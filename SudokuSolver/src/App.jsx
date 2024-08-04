@@ -156,12 +156,12 @@ function App() {
           </div>
     <div className="flex flex-col items-center p-4">
     {notification ?( 
-              <div className="bg-red-500 text-white px-4 py-2 rounded mb-4">
+              <div className="bg-red-500 text-white px-4 py-2 rounded mb-4  sm:text-4xl  text-sm">
                 {notification}
               </div>
             ):( 
-              <div className="bg-green-500 text-white px-4 py-2 rounded mb-4 sm:text-4xl  text-sm s">
-                Enter the inital state of the Board
+              <div className="bg-green-500 text-white px-4 py-2 rounded mb-4 sm:text-4xl  text-sm ">
+                Enter the inital values  of the Sudoku
               </div>
             ) }
       
@@ -172,11 +172,11 @@ function App() {
               Math.floor(i / 3) % 2 === Math.floor(j / 3) % 2;
               const backgroundColor = initialCells[i][j]
               ? isDarkGray
-                ? 'bg-green-500'
-                : 'bg-green-600'
+                ? 'bg-green-400 text-blue-500'
+                : 'bg-green-600 text-blue-300'
               : isDarkGray
               ? 'bg-yellow-500 '
-              : 'bg-orange-600 text-blue-300';
+              : 'bg-orange-600 ';
 
             return (
               <b>

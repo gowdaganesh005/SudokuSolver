@@ -11,6 +11,7 @@ The Sudoku logic is based on the backtracking to evalute the answer
 * Dark Mode
 * Auto shift to next cell as soon as one number is entered
 * Navigation via arrow keys removing dependency on mouse to enter input to each cell
+* Color differnce to easily differenciate between the user entered inputs and generated values
    
 ### Try out it here !!!
 [Live Link ](https://sudoku-solver-2-n2z6gh8ml-gowdaganesh005s-projects.vercel.app)
